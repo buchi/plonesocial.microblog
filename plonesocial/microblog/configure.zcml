@@ -12,6 +12,7 @@
   <include package=".browser" />
   <include package=".portlets" />
   <include file="permissions.zcml" />
+  <include file="contenthistory.zcml" />
 
   <genericsetup:registerProfile
       name="default"

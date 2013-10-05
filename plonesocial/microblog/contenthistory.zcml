@@ -1,0 +1,12 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="plonesocial.microblog">
+
+    <subscriber
+        for="*
+             Products.Archetypes.interfaces.IObjectEditedEvent"
+        handler=".contenthistory.object_modified"
+        />
+
+</configure>
